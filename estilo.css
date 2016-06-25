@@ -1,0 +1,756 @@
+﻿/*----------------------------------------------------------
+	Página de estilos - Portal do aluno
+-----------------------------------------------------------*/
+/*----------------------------------------------------------
+CSS Reset - Normalize.css
+----------------------------------------------------------*/
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:0 0}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+/*----------------------------------------------------------
+Configurações Gerais <<<<<==================================
+----------------------------------------------------------*/
+body{
+	background:url(imagens/background.jpg); 
+	color:#3B5052; 
+	font-family: "Open Sans", Helvetica, sans-serif, arial; 
+	font-size: 18px; 
+	font-weight: 300;
+	line-height: 1.2222222222em;
+	text-align: left; 
+	text-shadow:1px 1px 0px #fff; 
+}
+.center{
+	margin: 0 auto;
+	max-width:1200px; /*largura máxima do layout*/
+	width: 90%; /*ajuste do layout à tela*/
+}
+/*.clearfix usado para adicionar um espaço vazio antes e depois dos elementos
+  evitando que os floats se aglomerem.
+*/
+.clearfix:before, .clearfix:after {
+    content: " "; 
+    display: table; 
+}
+.clearfix:after {
+    clear: both;
+} 
+.clearfix {
+    *zoom: 1;
+}
+/*fim do clearfix*/
+img, picture, video, embed {
+    max-width: 100%; /*define a largura máxima em até 100%*/
+}
+h1, h2{
+	color:#3B5052;
+	font-size: 3.3333333333em; 
+	letter-spacing: -0.05em; 
+	line-height: 1em; 
+}
+h3{
+	font-size: 1,111111111em; 
+	font-weight: 300;
+	letter-spacing: -0.0625em; 
+	line-height: 1.1875em; 
+}
+
+h4 { 
+	
+	position: relative;
+	text-align: center;
+	color:#3B5052;
+	font-size: 3.3333333333em;
+	top: -150px;
+}
+
+h5 { 
+	
+	position: relative;
+	text-align: center;
+	color:pink;
+	font-size: 1.111111111em;
+	top: -150px;}
+
+
+	h6 { 
+	
+	position: relative;
+	text-align: center;
+	color:#3B5052;
+	font-size: 2.3333333333em;
+	top: -150px;}
+
+
+
+p{
+	font-weight: 300;
+	letter-spacing: -0.05555555556em; 
+}
+a, a:link, a:visited{
+	color:#000000; 
+	font-weight:400; 
+	text-decoration:none;
+	
+}
+a:hover{
+	color:#3E5DDB;
+	text-decoration:underline;
+	text-shadow:none; 
+}
+
+b {position: relative;
+font-size: 20px;
+left: 80%;
+}
+/*----------------------------------------------------------
+Seção HEADER - Topo do Site <<<<<===========================
+----------------------------------------------------------*/
+header{
+	border-bottom: 1px solid #E0E0E0; 
+	height:200px;
+	width:100%; 
+}
+/*
+=========================
+logotipo
+=========================
+*/
+
+
+
+
+
+	header h1 a{
+		background:url(imagens/alunos.png) no-repeat ; 
+		display:block; 
+		float:left; 
+		height:200px;
+		text-indent:-9999; 
+		width:58.333333333333%; 
+		margin-left: 20%;
+	}
+
+
+
+header  a{
+		background:url(imagens/professores.png) no-repeat ; 
+		display:block; 
+		float:left; 
+		height:200px;
+		text-indent:-9999; 
+		width:58.333333333333%; 
+		margin-left: 25%;
+	}
+
+	header  p a{
+		background:url(imagens/coordenador.png) no-repeat ; 
+		display:block; 
+		float:left; 
+		height:200px;
+		text-indent:-9999; 
+		width:58.333333333333%; 
+		margin-left: 35%;
+	}
+
+
+	header h2 a{
+		background:url(imagens/logo-portal.png) no-repeat ; 
+		display:block; 
+		float:left; 
+		height:200px;
+		text-indent:-9999; 
+		width:58.333333333333%; 
+		margin-left: 25%;
+	}
+
+
+header h3 a{
+		background:url(imagens/delete.png) no-repeat ; 
+		display:block; 
+		float:left; 
+		height:200px;
+		text-indent:-9999; 
+		width:50%; 
+		margin-left: 40%;
+		
+	}
+
+
+/*----------------------------------------------------------
+Seção .CHAMADA <<<<<========================================
+----------------------------------------------------------*/
+.chamada{
+	height:200%;
+	text-align:center;
+	width:100%; 
+}
+	h2 span{
+		font-size: 1em; 
+		font-weight: 300;
+		letter-spacing: -0.0333333333em; 
+		line-height: 1em; 
+	}
+	.chamada h3 {
+		margin: 0 auto;
+		width:65%; 
+	}
+/*----------------------------------------------------------
+Seção .CONTAINER - <<<<<=============
+----------------------------------------------------------*/
+.container{
+	background-color:#CAE4E7;
+	height: 350px;
+	padding:3%; 
+	width:80%; 
+	margin-left: 10%;
+}
+/*Por causa do padding, a largura, width, do .container passou de 1.200px para 1.140px (95%)*/
+.desktop{
+	float:left;
+	position:relative;
+	text-align:center;
+	width:80%; 
+	left: 10%;
+	font-family: "Open Sans", Helvetica, sans-serif, arial;
+}
+.desktop{
+	margin-right: 2.631578947368421%; 
+}
+
+.desktop{
+	background-color:#95C9CF;
+}
+
+.form{
+     color:#354B52;
+     font-size: 100%;
+     font-weight: 400;
+     letter-spacing: 30%; /*espaçamento entre as letras*/
+     line-height: 100%;
+     font-family: 'Oswald', sans-serif;
+     line-height:200%;
+     vertical-align:middle;
+     
+
+}
+
+f
+
+.button  {    
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    box-shadow: 1px 1px 2px #333333;    
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+    background: #5D6E74; 
+    border:1px solid #000000;
+    width:110px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+
+}
+
+.button_turma  {    
+    
+    top: -175px;
+padding: 50px 50px;
+font-family: 'Oswald', sans-serif;
+position: relative;
+right:-25%;
+}
+
+.button_telanota  {    
+       width:55px;
+       font-size: 12px;
+    
+}
+
+.but {
+display: inline-block;
+background-color: #ccc;
+color: #444;
+padding: 40px 20px;
+text-decoration: none;
+box-sizing: border-box;
+font-family: "Open Sans", Helvetica, sans-serif, arial;
+font-size: 14px;
+border: 2px;
+font-size: 100%;
+
+}
+
+
+.but:hover {
+background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,.15));
+cursor: pointer;
+}
+
+
+
+/*----------------------------------------------------------
+Seção .CONTAINER-MENU - Conteúdo com 1 coluna para o menu <<<<<=============
+----------------------------------------------------------*/
+.container-menu{
+	background-color:#A7D2D7;
+	height: 50px;
+	padding:3%; 
+	width:70%; 
+	margin-left: 10%;
+	border-radius:7%;
+}
+
+.container-menu1{
+	background-color:#CAE4E7;
+	height: 50px;
+	padding:3%; 
+	width:70%; 
+	margin-left: 15%;
+	border-radius:7%;
+}
+
+
+.but-menu {
+display: inline-block;
+background-color: #FFFFFF;
+color: #444;
+padding: 1% 1%;
+text-decoration: none;
+font-family: "Open Sans", Helvetica, sans-serif, arial;
+font-size: 14%;
+border: 2%;
+font-size: 100%;
+margin-left: 10%;
+border-radius:5%;
+
+}
+
+
+.but-menu:hover {
+background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,.15));
+cursor: pointer;
+}
+
+.but-menu1 {
+display: inline-block;
+background-color: #FFFFFF;
+color: #444;
+padding: 2% 1%;
+text-decoration: none;
+font-family: "Open Sans", Helvetica, sans-serif, arial;
+font-size: 14%;
+border: 2%;
+font-size: 100%;
+margin-left: 14%;
+border-radius:5%;
+
+}
+
+.but-menu2 {
+display: inline-block;
+background-color: #FFFFFF;
+color: #444;
+padding: 2% 1%;
+text-decoration: none;
+font-family: "Open Sans", Helvetica, sans-serif, arial;
+font-size: 14%;
+border: 2%;
+font-size: 100%;
+margin-left: 9%;
+border-radius:5%;
+
+}
+/*
+=========================
+figure - imagens
+=========================
+*/
+
+/*
+=========================
+formatação do texto
+=========================
+*/
+.container h3{
+	color:#fff;
+	font-size: 1,111111111em; 
+	font-weight: 300
+	letter-spacing: -0.0625em; 
+	margin-bottom: 30px;
+	text-shadow:none;
+}
+.container p{
+	background-color:#fff;
+	float:left;
+	height:160px;
+	padding: 1.9444444444444445%; 
+	position:absolute;
+	width-max:100%; 
+	text-align:justify;
+	top:225px;
+}
+
+/* Caixa de noticias*/
+.noticias{
+position: relative;
+top:30%;
+left:5%;
+background-color:#CAE4E7;
+border-radius: 3%;
+width:45%;
+height:150%;
+padding: 10% 10%;
+border: 5px dotted #3B5052;
+margin-left: 10%
+
+}
+
+#noticia1{
+	position:relative;
+	top: -100px;
+	border: 5px dotted #3B5052;
+
+}
+
+#noticia2{
+	position:relative;
+	top: -90px;
+	border: 5px dotted #3B5052;
+	
+}
+
+#noticia3{
+	position:relative;
+	top: -80px;
+	border: 5px dotted #3B5052;
+	
+}
+ 
+
+
+/* tabela de disciplinas*/
+
+
+.disciplinas{
+position: relative;
+top:30%;
+left:5%;
+background-color:#CAE4E7;
+border-radius: 3%;
+width:45%;
+height:150%;
+padding: 10% 10%;
+border: 5px dotted #3B5052;
+margin-left: 10%
+
+}
+
+#tbla{
+	position: relative;
+	top: -80px;
+	right:-80px;
+	text-align: center;
+	width:80%;
+	font-weight:bold;
+   
+}
+
+#tbl{
+	position: relative;
+	top: -120px;
+	right: 80%;
+	text-align: center;
+	width:105%;
+	font-weight:bold;
+   
+}
+
+#tbl1{
+	position: relative;
+	top: -120px;
+	right: 6%;
+	text-align: center;
+	width:105%;
+	font-weight:bold;
+	margin-left: -10%;
+	padding: 50% 50%;
+
+   
+}
+
+
+.but1 {
+display: inline-block;
+right: -20px;
+background-color: #4C9DA8;
+color: #444;
+padding: 10px 20px;
+text-decoration: none;
+box-sizing: border-box;
+font-family: "Open Sans", Helvetica, sans-serif, arial;
+font-size: 14px;
+border: 2px;
+font-size: 100%;
+
+}
+
+.but2 {
+	position: relative;
+ right: -10px;
+display: inline-block;
+background-color: #4C9DA8;
+color: #444;
+padding: 10px 20px;
+text-decoration: none;
+box-sizing: border-box;
+font-family: "Open Sans", Helvetica, sans-serif, arial;
+font-size: 10px;
+border: 20px;
+font-size: 100%;
+
+
+}
+
+
+
+}
+.but4 {
+	position: relative;
+	top: 20px;
+ right: -10px;
+display: inline-block;
+background-color: #4C9DA8;
+color: #444;
+padding: 5px 5px;
+text-decoration: none;
+box-sizing: border-box;
+font-family: "Open Sans", Helvetica, sans-serif, arial;
+font-size: 8px;
+border: 20px;
+font-size: 100%;
+
+
+}
+
+.but5 {
+	position: relative;
+	top: -160px;
+ right: -530px;
+display: inline-block;
+background-color: #4C9DA8;
+color: #444;
+padding: 5px 5px;
+text-decoration: none;
+box-sizing: border-box;
+font-family: "Open Sans", Helvetica, sans-serif, arial;
+font-size: 8px;
+border: 20px;
+font-size: 100%;
+
+
+}
+
+
+/* botão atualizar cadastro*/
+
+.but3 {
+	position: relative;
+ right: -10px;
+display: inline-block;
+background-color: #4C9DA8;
+color: #444;
+padding: 5px 5px;
+text-decoration: none;
+box-sizing: border-box;
+font-family: "Open Sans", Helvetica, sans-serif, arial;
+font-size: 8px;
+border: 20px;
+font-size: 100%;
+
+
+}
+
+
+
+
+/* Caixa de notas*/
+
+
+.notas{
+position: relative;
+top:30%;
+left:5%;
+background-color:#CAE4E7;
+border-radius: 3%;
+width:45%;
+height:150%;
+padding: 10% 10%;
+border: 5px dotted #3B5052;
+margin-left: 10%
+
+}
+
+
+
+
+/* MATERIAIS DIDATICOS */
+
+#material{
+
+	position: relative;
+	top: -120px;
+
+}
+
+
+
+.div-form{position: relative;
+top: -100px;}
+input{padding:3px; background-color:#fff; margin-bottom:5px; border:1px solid #c0c0c0; font-size: 100%;}
+
+input:focus{border-color:#000;}
+
+
+
+#acesso{
+
+	position: relative;
+	top: -120px;
+	font-weight:bold;
+	font-size: 110%;
+
+}
+
+.noticias-professor{
+position: relative;
+top:30%;
+left:5%;
+background-color:#9AD9C0;
+border-radius: 3%;
+width:45%;
+height:150%;
+padding: 10% 10%;
+border: 5px dotted #3B5052;
+margin-left: 10%
+
+}
+
+.noticias-coordenador{
+position: relative;
+top:30%;
+left:5%;
+background-color:#FFA85A;
+border-radius: 3%;
+width:45%;
+height:150%;
+padding: 10% 10%;
+border: 5px dotted #3B5052;
+margin-left: 10%
+
+}
+
+
+.solicitacoes{
+position: relative;
+top:30%;
+left:5%;
+background-color:#CAE4E7;
+border-radius: 3%;
+width:45%;
+height:150%;
+padding: 10% 10%;
+border: 5px dotted #3B5052;
+margin-left: 10%
+
+}
+
+
+#btn_prox_pag{
+color:#FA8072;
+}
+/*----------------------------------------------------------
+Seção FOOTER - Rodape com 2 colunas <<<<<===================
+----------------------------------------------------------*/
+footer{
+	clear:both;
+	height: 50px;
+	padding: 10px 0;
+	width:100%; 
+}
+.copyright{
+	float:left;
+	margin-left: 2.5%; 
+}
+.desenvolvedor{
+	float:right;
+}
+
+
+
+
+
+
+/*----------------------------------------------------------
+Media Queries <<<<<=========================================
+----------------------------------------------------------*/
+
+/* 
+1200px – Desktops, notebooks com monitores widescreen
+***********************************************************/
+@media screen and (max-width: 1200px){
+	.chamada h3 {
+		font-size: 1,111111111em; 
+	}
+	.container h3{
+		font-size: 1.55555555556em; 
+	}
+	.container p{
+		height: 170px;
+		top:217px;
+	}
+	.form {
+		height: 170%;
+		top:217%;
+	}
+
+}
+
+
+
+
+menu{
+list-style:none; 
+border:1px solid #c0c0c0; 
+float:left; 
+}
+
+.menu li{ position:relative; float:left; border-right:1px solid #c0c0c0; padding: 1px 10px; top: -30px;}
+
+
+.menu li a{color:#333; text-decoration:none; padding: 1px 40px;  display:block;}
+ 
+.menu li a:hover{
+background:#6F8D8E; 
+color:6F8D8E; 
+-moz-box-shadow:0 3px 10px 0 #CCC; 
+-webkit-box-shadow:0 3px 10px 0 #ccc; 
+text-shadow:0px 0px 5px #fff; 
+}
+
+
+.menu li  ul{
+position:absolute; 
+top:55px; 
+left:0;
+background-color:6F8D8E; 
+display:none;
+}   
+
+
+.menu li:hover ul, .menu li.over ul{display:block;}
+.menu li ul li{
+border:1px solid #c0c0c0;
+display:block;
+width:150px;
+}
+
+
